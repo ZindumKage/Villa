@@ -19,7 +19,7 @@ jobs:
           host: ${{ secrets.EC2_HOST }}
           username: ${{ secrets.EC2_USERNAME }}
           key: ${{ secrets.EC2_SSH_KEY }}
-          source: "*.html,*.css,*.js"
+          source: "./*"
           target: "/var/www/cicd-website"
 
       - name: Restart Nginx
